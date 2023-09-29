@@ -21,9 +21,7 @@ const Events = () => {
   useEffect(() => {
     async function getMainEvents() {
       try {
-        const response = await axios.get(
-          "https://mediaback.shreshta.tech/api/events/highlight"
-        );
+        const response = await axios.get("http://localhost/api/events");
         setEvents(response.data);
       } catch (error) {
         console.error(error);

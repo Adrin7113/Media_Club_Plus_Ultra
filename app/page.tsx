@@ -4,6 +4,7 @@ import Intro from "./components/landing/Intro";
 import Logos from "./components/landing/Logos";
 import Opportunities from "./components/landing/Opportunities";
 import Events from "./components/landing/Events";
+import JoinUs from "./components/landing/JoinUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Logos />
       <Opportunities />
       <Events />
+      <JoinUs />
     </main>
   );
 }
