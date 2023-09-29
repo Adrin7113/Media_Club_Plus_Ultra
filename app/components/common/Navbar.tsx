@@ -28,7 +28,7 @@ const Navbar = () => {
             height={200}
             src="/svg/mediaLogo.svg"
             alt="Mits Media Club Logo"
-            className="cursor-pointer"
+            className="cursor-pointer h-12 w-auto"
           />
         </Link>
         <Image
@@ -46,7 +46,7 @@ const Navbar = () => {
         }`}
       >
         <div className="m-28 mt-[100px] w-[75%] geo flex flex-col gap-5">
-          <Link href="/">
+          <Link href="/" onClick={() => setDrop(!drop)}>
             <h1
               className={`${
                 location == "/"
@@ -57,7 +57,7 @@ const Navbar = () => {
               Home
             </h1>
           </Link>
-          <Link href="/events">
+          <Link href="/events" onClick={() => setDrop(!drop)}>
             <h1
               className={`${
                 location == "/events"
@@ -68,7 +68,7 @@ const Navbar = () => {
               Events
             </h1>
           </Link>
-          <Link href="/radio">
+          <Link href="/radio" onClick={() => setDrop(!drop)}>
             <h1
               className={`${
                 location == "/radio"
@@ -79,7 +79,7 @@ const Navbar = () => {
               Radio
             </h1>
           </Link>
-          <Link href="/core">
+          <Link href="/core" onClick={() => setDrop(!drop)}>
             <h1
               className={`${
                 location == "/core"
@@ -90,7 +90,7 @@ const Navbar = () => {
               Core
             </h1>
           </Link>
-          <a href="mailto:mediaclub@mgits.ac.in">
+          <a href="mailto:mediaclub@mgits.ac.in" onClick={() => setDrop(!drop)}>
             <h1
               className={`text-white border-white font-bold text-5xl  w-full border-b-2 pb-5 hover:border-red-600 hover:text-red-600 transition-all ease-in-out duration-500 cursor-pointer`}
             >

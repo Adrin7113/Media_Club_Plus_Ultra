@@ -10,7 +10,7 @@ const Logos = () => {
             height={50}
             src="/logos/muthoot.svg"
             alt="The Muthoot Logo"
-            className="w-[50px]"
+            className="h-6 w-auto"
           />
           <h1 className="text-white text-sm geo w-[200px]">
             Muthoot Institute of Technology and Science
@@ -22,7 +22,7 @@ const Logos = () => {
             height={50}
             src="/logos/nba.svg"
             alt="The NBA Logo"
-            className="w-[50px]"
+            className="h-6 w-auto"
           />
           <h1 className="text-white text-sm geo w-[200px]">
             National Board of Accreditation
@@ -34,7 +34,7 @@ const Logos = () => {
             height={50}
             src="/logos/nirf.svg"
             alt="The NIRF Logo"
-            className="w-[50px]"
+            className="h-6 w-auto"
           />
           <h1 className="text-white text-sm geo w-[200px]">
             NIRF Ranking 251-300 (Engg 2022)
@@ -46,7 +46,7 @@ const Logos = () => {
             height={50}
             src="/logos/ariia.svg"
             alt="The ARIIA Logo"
-            className="w-[50px]"
+            className="h-6 w-auto"
           />
           <h1 className="text-white text-sm geo w-[200px]">
             ARIIA Report 2021 “Performer” Band
