@@ -1,27 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  overflow-x: hidden;
+  background-color: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Fonts */
+@font-face {
+  font-family: "Drummer";
+  src: url("/fonts/Drummer.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Typographica";
+  src: url("/fonts/Typographica.ttf") format("truetype");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.drummer {
+  font-family: "Drummer";
+}
+
+.typo {
+  font-family: "Typographica";
+}
+
+.geo {
+  font-family: "Geologica", sans-serif;
+}
+
+.open {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Blur Effect*/
+
+.bE {
+  backdrop-filter: blur(20px);
+}
+
+.wBE {
+  backdrop-filter: blur(5px);
+}
+
+/*Gradients*/
+
+.gradImg {
+  background: linear-gradient(to bottom, transparent, black);
+  border-radius: 1.5rem;
+}
+
+/*Audio Styles*/
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 18rem;
+}
+
+/* Removes default focus */
+.progress:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.progress::-webkit-slider-runnable-track {
+  background-color: #000000;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -12px;
+  background-color: #c83838;
+  height: 2rem;
+  width: 0.5rem;
+}
+
+/******** Firefox styles ********/
+.progress::-moz-range-track {
+  background-color: #000000;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.progress::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #c83838;
+  height: 2rem;
+  width: 0.5rem;
+}
+
+.progress:hover::-moz-range-thumb {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  scale: 1.2;
+}
+
+/* ScrollBar Styles */
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(127 29 29);
+  border-radius: 15px;
+}
+
+.dropDown {
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+.dropDownActive {
+  max-height: 5000px;
+  transition: max-height 2.25s ease-in;
 }
