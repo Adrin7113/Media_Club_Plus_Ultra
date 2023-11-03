@@ -1,19 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import EventIntro from "@/app/components/event/EventIntro";
-
-interface Event {
-  eventName: string;
-  imgUrl?: string;
-  link: URL;
-  highlight: boolean;
-  picUrls: string[];
-  eventId: string;
-  bgUrl: string;
-  writeUp: string;
-  drive?: string;
-}
+import EventIntro from "@/components/event/EventIntro";
 
 const Event = ({ params }: { params: { id: string } }) => {
   const [eventDetails, setEventDetails] = useState({
@@ -30,7 +18,7 @@ const Event = ({ params }: { params: { id: string } }) => {
   useEffect(() => {
     async function getEvent() {
       axios
-        .post(`http://localhost/api/events/event`, {
+        .post(`https://mediaclubbackend-queengn6.b4a.run/api/events/event`, {
           eventId: params.id,
         })
         .then(function (response) {

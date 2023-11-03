@@ -12,22 +12,22 @@ const Opportunities = () => {
       <div className="hidden md:w-1/2  lg:flex flex-col justify-center items-center p-5 gap-5">
         <div className="flex  gap-10 justify-center items-center">
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/reels.png"
             alt="Reels"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/tv.png"
             alt="TV and Media"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/video.png"
             alt="Videography"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
@@ -36,22 +36,22 @@ const Opportunities = () => {
 
         <div className="flex  gap-10 justify-center items-center">
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/edit.png"
             alt="Editing"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/design.png"
             alt="Designing"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/campaign.png"
             alt="Campaign"
             className="w-44 h-44  transition-all duration-500 ease-in-out"
@@ -62,15 +62,15 @@ const Opportunities = () => {
       <div className="lg:hidden w-1/2 flex flex-col justify-center items-center p-5 gap-5">
         <div className="flex  gap-10 justify-center items-center">
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/reels.png"
             alt="Reels"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/tv.png"
             alt="TV and Media"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
@@ -78,15 +78,15 @@ const Opportunities = () => {
         </div>
         <div className="flex  gap-10 justify-center items-center">
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/video.png"
             alt="Videography"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/edit.png"
             alt="Editing"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
@@ -94,15 +94,15 @@ const Opportunities = () => {
         </div>
         <div className="flex  gap-10 justify-center items-center">
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/design.png"
             alt="Designing"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
           />
           <Image
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             src="/img/opportunities/campaign.png"
             alt="Campaign"
             className="w-32 h-32 md:w-44 md:h-44 cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"

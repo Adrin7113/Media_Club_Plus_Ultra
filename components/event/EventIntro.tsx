@@ -50,10 +50,10 @@ const EventIntro: NextPage<EventProp> = ({ eventDetails }) => {
       >
         <div className="absolute top-0 left-0 bg-black/60 z-10 h-full w-full"></div>
         <div className="relative z-20 w-full h-full p-10 flex flex-col gap-10">
-          <h1 className="text-5xl text-white font-bold">
+          <h1 className="text-5xl text-white font-bold geo">
             {eventDetails.eventName}
           </h1>
-          <h1 className="text-lg text-white w-full md:w-1/2">
+          <h1 className="text-lg text-white w-full md:w-1/2 psans">
             {eventDetails.writeUp}
           </h1>
         </div>
@@ -89,7 +89,7 @@ const EventIntro: NextPage<EventProp> = ({ eventDetails }) => {
               key={index}
               src={value}
               alt={`${eventDetails.eventName} Image ${index}`}
-              className="h-full w-auto"
+              className="h-full w-auto my-auto"
             />
           ))}
         </div>

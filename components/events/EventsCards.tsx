@@ -20,7 +20,9 @@ const EventsCards = () => {
   useEffect(() => {
     async function getMainEvents() {
       try {
-        const response = await axios.get("http://localhost/api/events");
+        const response = await axios.get(
+          "https://mediaclubbackend-queengn6.b4a.run/api/events"
+        );
         setEvents(response.data);
       } catch (error) {
         console.error(error);

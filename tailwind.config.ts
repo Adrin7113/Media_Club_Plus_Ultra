@@ -14,6 +14,7 @@ const config: Config = {
         "grad-redish1": "url('/bg/gradRedish1.png')",
         oppor: "url('/bg/oppor.png')",
         footerLanding: "url('/img/footerLanding.png')",
+        coreBg: "url('/core/bg/gradCore.png')",
       },
     },
   },

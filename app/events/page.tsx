@@ -1,5 +1,5 @@
-import EventsCards from "../components/events/EventsCards";
-import EventsIntro from "../components/events/EventsIntro";
+import EventsCards from "@/components/events/EventsCards";
+import EventsIntro from "@/components/events/EventsIntro";
 
 const Events = () => {
   return (

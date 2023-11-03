@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Adrin Jose CT",
+    "role": "Full Stack Developer",
+    "link": "https://www.linkedin.com/in/dryn/",
+    "img": "/core/creators/Adrin.png"
+  },
+  {
+    "name": "Advaith Narayanan",
+    "role": "DevOps Engineer",
+    "link": "https://www.linkedin.com/in/glitchy/",
+    "img": "/core/creators/Advaith.png"
+  },
+  {
+    "name": "Joshua Varghese",
+    "role": "UI/UX Engineer",
+    "link": "https://www.linkedin.com/in/joshuavarghese1/",
+    "img": "/core/creators/Joshua.png"
+  },
+  {
+    "name": "Rovan Thomas John",
+    "role": "FrontEnd Developer",
+    "link": "https://www.linkedin.com/in/rovntoms/",
+    "img": "/core/creators/Rovn.png"
+  },
+  {
+    "name": "Vyshnav D Kumar",
+    "role": "FrontEnd Developer",
+    "link": "https://www.linkedin.com/in/vyshnav-d-kumar-836160229/",
+    "img": "/core/creators/Vyshnav.png"
+  }
+]
