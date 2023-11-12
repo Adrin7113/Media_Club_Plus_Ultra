@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Intro from "@/components/radio/Intro";
-import Cards from "@/components/radio/Cards";
+import Intro from "@/components/radio/Intro.jsx";
+import Cards from "@/components/radio/Cards.jsx";
 
 const Radios = () => {
   const [radios, setRadios] = useState(null);

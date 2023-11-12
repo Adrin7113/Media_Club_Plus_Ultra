@@ -3,24 +3,7 @@ import { useEffect, useState } from "react";
 import { useRadioContext } from "@/hooks/useRadioContext";
 import Image from "next/image";
 
-interface Radio {
-  __v: number;
-  _id?: number;
-  createdAt: string;
-  highlight: boolean;
-  imgUrl: string;
-  length: string;
-  link: string;
-  radioId: string;
-  radioName: string;
-  updatedAt: string;
-  writeUp: string;
-}
-interface Props {
-  radios: Radio[];
-}
-
-const Intro = ({ radios }: Props) => {
+const Intro = ({ radios }) => {
   const { current, dispatch } = useRadioContext();
   const [radio, setRadio] = useState(radios[0]);
   const [play, setPlay] = useState(true);
@@ -29,9 +12,7 @@ const Intro = ({ radios }: Props) => {
   // eslint-disable-next-line no-unused-vars
   const [audio, setAudio] = useState(new Audio(radio.link));
   useEffect(() => {
-    const progressEl = document.querySelector(
-      'input[type="range"]'
-    ) as HTMLInputElement;
+    const progressEl = document.querySelector('input[type="range"]');
     if (!progressEl) return;
     let mouseDownOnSlider = false;
     audio.addEventListener("loadeddata", () => {
@@ -65,6 +46,7 @@ const Intro = ({ radios }: Props) => {
     return () => {
       audio.pause();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -88,6 +70,7 @@ const Intro = ({ radios }: Props) => {
       setRightPlay(false);
     }
     setRadio(radios[current]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current]);
   return (
     <div className=" h-max relative bg-grad-redish1 rounded-b-3xl bg-no-repeat bg-cover bg-center flex flex-col items-center pt-40 pb-24">
@@ -192,7 +175,7 @@ const Intro = ({ radios }: Props) => {
               min="0"
               max="1"
               defaultValue={audio.volume}
-              onChange={(e) => (audio.volume = Number(e.target.value))}
+              onChange={(e) => (audio.volume = e.target.value)}
               step="0.01"
             ></input>
             <Image
@@ -200,7 +183,7 @@ const Intro = ({ radios }: Props) => {
               height={50}
               alt="Volume"
               src="/radio/volume.svg"
-              className="absolute h-6 bottom-5 left-[47%]"
+              className="absolute w-6 h-6 bottom-5 left-[47%]"
             />
           </div>
         </div>

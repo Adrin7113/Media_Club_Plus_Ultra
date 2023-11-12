@@ -4,21 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 
 const Cards = () => {
-  interface Radio {
-    __v: number;
-    _id?: number;
-    createdAt: string;
-    highlight: boolean;
-    imgUrl: string;
-    length: string;
-    link: string;
-    radioId: string;
-    radioName: string;
-    updatedAt: string;
-    writeUp: string;
-  }
   const { current, dispatch } = useRadioContext();
-  const [radios, setRadios] = useState<Radio[]>([]);
+  const [radios, setRadios] = useState([]);
 
   useEffect(() => {
     async function getMainRadios() {
@@ -34,8 +21,7 @@ const Cards = () => {
     getMainRadios();
   }, []);
 
-  function changeRadio(index: number) {
-    index = Number(index);
+  function changeRadio(index) {
     if (current != index) {
       dispatch({ type: "CHANGE_RADIO", payload: index });
     }
@@ -80,7 +66,7 @@ const Cards = () => {
                   id={index.toString()}
                   src="/radio/play.png"
                   onClick={(e) => {
-                    changeRadio(Number((e.target as HTMLImageElement).id));
+                    changeRadio(e.target.id);
                     scrollPlayer();
                   }}
                   className={`w-12 h-12 hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer`}
