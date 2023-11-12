@@ -67,16 +67,18 @@ const EventIntro: NextPage<EventProp> = ({ eventDetails }) => {
         <Image
           width={500}
           height={500}
-          src="/svg/curve.svg"
+          unoptimized={true}
+          src="/svg/curve.png"
           alt="Curve"
-          className="absolute top-[-50px] z-20 w-full"
+          className="absolute left-0 top-0 z-20 w-full"
         />
         <Image
           width={500}
           height={500}
-          src="/svg/curve.svg"
+          unoptimized={true}
+          src="/svg/curve.png"
           alt="Curve"
-          className="absolute bottom-[-50px] z-20 w-full"
+          className="absolute left-0 bottom-0 z-20 w-full rotate-180"
         />
         <div
           id="ScrollOne"

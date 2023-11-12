@@ -18,7 +18,7 @@ const Event = ({ params }: { params: { id: string } }) => {
   useEffect(() => {
     async function getEvent() {
       axios
-        .post(`https://mediaclubbackend-queengn6.b4a.run/api/events/event`, {
+        .post(`https://apis.glitchy.systems/api/events/event`, {
           eventId: params.id,
         })
         .then(function (response) {

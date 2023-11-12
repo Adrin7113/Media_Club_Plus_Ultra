@@ -22,7 +22,7 @@ const Events = () => {
     async function getMainEvents() {
       try {
         const response = await axios.get(
-          "https://mediaclubbackend-queengn6.b4a.run/api/events"
+          "https://apis.glitchy.systems/api/events"
         );
         setEvents(response.data);
       } catch (error) {

@@ -8,8 +8,9 @@ import { RadioContextProvider } from "@/context/radioContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Media Club",
-  description: "The MITS Media Club Website",
+  title: "Mits Media Club",
+  description:
+    "The Muthoot Institute of Technology and Science(MITS) Media Club Website",
 };
 
 export default function RootLayout({

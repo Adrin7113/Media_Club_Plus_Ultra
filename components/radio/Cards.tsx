@@ -24,7 +24,7 @@ const Cards = () => {
     async function getMainRadios() {
       try {
         const response = await axios.get(
-          "https://mediaclubbackend-queengn6.b4a.run/api/radios"
+          "https://apis.glitchy.systems/api/radios"
         );
         setRadios(response.data);
       } catch (error) {
